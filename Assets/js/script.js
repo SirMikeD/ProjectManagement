@@ -20,27 +20,7 @@ function createTaskCard(task) {
   return cardHtml;
 }
 
-// Initialize the modal dialog with Save and Cancel buttons
-$("#formModal").dialog({
-    autoOpen: false,
-    modal: true,
-    buttons: [
-      {
-        text: "Save",
-        class: "btn btn-primary",
-        click: function() {
-          // Save button logic
-        }
-      },
-      {
-        text: "Cancel",
-        class: "btn btn-secondary",
-        click: function() {
-          // Cancel button logic
-        }
-      }
-    ]
-  });
+
 
 // Function to render the task list and make cards draggable
 function renderTaskList() {
