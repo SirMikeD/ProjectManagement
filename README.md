@@ -1,3 +1,32 @@
+
+## Project management Application
+A simple Project task board application for managing project tasks using dynamic HTML, CSS, and jQuery.
+
+* Table of Contents
+* Introduction
+* Features
+* Installation
+* Usage
+* Contributing
+* License
+
+## Introduction
+This project is a task board application designed to help project teams organize and manage their tasks efficiently. It provides an intuitive interface for adding, updating, and tracking the progress of individual project tasks.
+
+## Features
+Display tasks in columns representing their progress state (Not Yet Started, In Progress, Completed)
+Color-coded task cards indicating nearing or overdue deadlines
+Modal dialog for adding new tasks with title, description, and deadline fields
+Save tasks to local storage for persistence across sessions
+Drag and drop functionality to update task progress by moving cards between columns
+Delete tasks from the task board
+
+# License
+This project is licensed under the MIT License.
+
+
+
+
 # 05 Third-Party APIs: Task Board
 
 ## Your Task
