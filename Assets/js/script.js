@@ -20,7 +20,25 @@ function createTaskCard(task) {
   return cardHtml;
 }
 
-
+// Initialize the modal dialog with Save and Cancel buttons
+$("#formModal").dialog({
+  autoOpen: false,
+  modal: true,
+  buttons: [
+    {
+      text: "Save",
+      class: "btn btn-primary",
+      click: function() {
+      }
+    },
+    {
+      text: "Cancel",
+      class: "btn btn-secondary",
+      click: function() {
+      }
+    }
+  ]
+});
 
 // Function to render the task list and make cards draggable
 function renderTaskList() {
@@ -36,7 +54,7 @@ function renderTaskList() {
 
 // Function to handle adding a new task
 function handleAddTask(event){
-    $("#formModal").dialog("open"); // Open the modal dialog when clicking Add Task button
+    $("#formModal").dialog("open");
   }
   
 // Function to handle deleting a task
@@ -49,6 +67,7 @@ function handleDeleteTask(event){
 // Function to handle dropping a task into a new status lane
 function handleDrop(event, ui, targetLane) {
   let taskId = ui.draggable.attr("id").split("-")[1]; // Extract task ID from draggable element
+  //need to figure out why drag isnt dragging to other boxes
   let task = taskList.find(task => task.id == taskId); // Find the task object in the taskList
   
   // Update task progress based on the target lane
