@@ -80,7 +80,7 @@ function handleDrop(event, ui, targetLane) {
   renderTaskList(); // Re-render the task list to reflect the changes
 }
 
-// When the page loads, render the task list, add event listeners, make lanes droppable
+// When the page loads, render the task list, add event listeners
 $(document).ready(function () {
     renderTaskList(); // Render the initial task list
   
@@ -92,7 +92,7 @@ $(document).ready(function () {
   
     // Initialize modal dialog
     $("#formModal").dialog({
-      autoOpen: false, // Ensure it's not opened by default
+      autoOpen: false, 
       modal: true,
       buttons: [
         {
